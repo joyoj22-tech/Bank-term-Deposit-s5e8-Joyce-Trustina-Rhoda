@@ -54,7 +54,8 @@ Trustina
 Feature Engineering, categorical encoding, anomaly handling, and Preprocessing.
 Rhoda
 Model training (LightGBM), validation scheme (5-Fold CV), hyperparameter tuning and final submission generation.
-
+Rhoda
+Currently working on the hyperpararameter tuning and final ensemble.
 
 
 
