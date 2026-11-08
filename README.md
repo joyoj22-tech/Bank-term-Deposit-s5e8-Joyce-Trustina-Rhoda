@@ -13,7 +13,7 @@ Dataset size
 Features
 17 features such as client demographics (age, job, marital status), account information (balance, housing loan), and campaign details (contact duration, month, previous outcome). 
 The Metric
-ROC-AUC: Measures the ability of the model to differentiate the positive class (subscribes) from the negative class (does not subscribe). A perfect score is 1.0 while random guessing is 0.5. Since only about 12% of clients subscribe, using accuracy would be misleading, therefore ROC-AUC is the correct metric to evaluate our model.
+ROC-AUC: It measures the ability of the model to differentiate the positive class (subscribes) from the negative class (does not subscribe). A perfect score is 1.0 while random guessing is 0.5. Since only about 12% of clients subscribe, using accuracy would be misleading, therefore ROC-AUC is the correct metric to evaluate our model.
 
 Exploratory Data Analysis (EDA) Findings
 Target Population
@@ -23,10 +23,10 @@ We found that the strongest predictor is `poutcome`, as seen on our bar charts. 
 Numeric Distribution
 Some Numeric Distributions are highly skewed to the right, such as `balance`, `duration`, and `campaign`. 
 Missing Values and Anomalies
-There are no explicit null values in the data. However, we found something odd though: 672,434 clients have `pdays = -1` which in the data set documentation means they were never previously contacted. 
+There are no explicit null values in the data. However, we found something odd. Although 672,434 clients have `pdays = -1` which in the data set documentation means they were never previously contacted. 
 
 Preprocessing and Feature Engineering 
-Based on the EDA we performed the following steps:
+Based on the EDA, we performed the following steps:
 In terms of anomaly handling, we added a new column, `pdays_flag`, (1 if the person has not been contacted, else 0), and we changed the value of the column `pdays_clean` from -1 to NaN so the model does not treat it as a mathematical number.
 Log Transformation
 Skewed feature was applied to the `duration` feature with a log transformation to aid the model to learn better.
@@ -56,7 +56,8 @@ Rhoda
 Model training (LightGBM), validation scheme (5-Fold CV), hyperparameter tuning and final submission generation.
 Rhoda
 Currently working on the hyperpararameter tuning and final ensemble.
-
+Trustina
+I am currently reviewing the feature engineering code and testing XGBoost.
 
 
 
