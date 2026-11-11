@@ -100,6 +100,7 @@ I am currently reviewing the feature engineering code and testing XGBoost.
 
 
 References
+
 Course lecturer. (2025). Titanic: Exploring the data and making a first submission [Colab notebook]. [Unpublished course material].
 
  Kaggle. (2025a). Predicting classification of bank term deposits [Notebook].
