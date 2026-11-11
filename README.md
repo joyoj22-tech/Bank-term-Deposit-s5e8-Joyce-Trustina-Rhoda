@@ -57,12 +57,16 @@ Team Members and Roles
 
 Joyce
  Data loading, Exploratory Data Analysis (EDA), visualizations and writing the data dictionary.
+
 Trustina
 Feature Engineering, categorical encoding, anomaly handling, and Preprocessing.
+
 Rhoda
 Model training (LightGBM), validation scheme (5-Fold CV), hyperparameter tuning and final submission generation.
+
 Rhoda
 Currently working on the hyperpararameter tuning and final ensemble.
+
 Trustina
 I am currently reviewing the feature engineering code and testing XGBoost.
 
