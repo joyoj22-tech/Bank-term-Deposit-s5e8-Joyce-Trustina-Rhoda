@@ -7,6 +7,7 @@ Target: `y`
 Evaluation Metric: ROC-AUC (Receiver Operating Characteristic - Area Under the Curve).
 
  Problem and Data
+
 The aim is to predict whether a client will sign up for a bank term deposit, based on marketing campaign data. 
 Dataset size
 750,000 training rows and 250,000 test rows.
