@@ -51,7 +51,12 @@ Results:
   Overall OOF ROC-AUC: 0.96831.
  We are yet to train the addittional models. we will do that later but soo far this is what we have done.
 
- We have aso made our first submission on kaggle and this is our score 0.96905
+ We have aso made our first submission on kaggle and below is our score 
+
+Local OOF ROC-AUC: 0.96831
+Kaggle public leaderboard:0.96918
+Kaggle private leaderboard:0.96905
+
 
 Team Members and Roles
 
