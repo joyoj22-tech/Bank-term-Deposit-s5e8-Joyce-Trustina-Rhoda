@@ -17,6 +17,7 @@ The Metric
 ROC-AUC: It measures the ability of the model to differentiate the positive class (subscribes) from the negative class (does not subscribe). A perfect score is 1.0 while random guessing is 0.5. Since only about 12% of clients subscribe, using accuracy would be misleading, therefore ROC-AUC is the correct metric to evaluate our model.
 
 Exploratory Data Analysis (EDA) Findings
+
 Target Population
 The dataset is highly imbalanced. 87.9% of clients did not subscribe (0), while only 12.1% subscribed (1).
 Categorical Relations
@@ -27,17 +28,20 @@ Missing Values and Anomalies
 There are no explicit null values in the data. However, we found something odd. Although 672,434 clients have `pdays = -1` which in the data set documentation means they were never previously contacted. 
 
 Preprocessing and Feature Engineering 
+
 Based on the EDA, we performed the following steps:
 In terms of anomaly handling, we added a new column, `pdays_flag`, (1 if the person has not been contacted, else 0), and we changed the value of the column `pdays_clean` from -1 to NaN so the model does not treat it as a mathematical number.
 Log Transformation
 Skewed feature was applied to the `duration` feature with a log transformation to aid the model to learn better.
 Categorical Encoding: We converted text columns to pandas' category dtype and passed them through the model without using one-hot encoding which would take up heavy memory consumption.
 
- The validation scheme and models.
+The validation scheme and models.
+
 To prevent overfitting and to ensure generalization of our model, we used 5-Fold Stratified Cross-Validation.
 The baseline model correctly predicts "0" (the majority class) with a baseline ROC-AUC of 0.50000.
 Model
 We trained a LightGBM gradient boosting model.
+
 Results: 
   Fold 1: 0.96881
   Fold 2: 0.96785
@@ -45,7 +49,9 @@ Results:
   Fold 4: 0.96891
   Fold 5: 0.96816
   Overall OOF ROC-AUC: 0.96831.
-  We are yet to train the addittional models. we will do that later but soo far this is what we have done.
+ We are yet to train the addittional models. we will do that later but soo far this is what we have done.
+
+ We have aso made our first submission on kaggle and this is our score 0.96905
 
 Team Members and Roles
 
