@@ -101,7 +101,10 @@ I am currently reviewing the feature engineering code and testing XGBoost.
 
 References
 Course lecturer. (2025). Titanic: Exploring the data and making a first submission [Colab notebook]. [Unpublished course material].
+
  Kaggle. (2025a). Predicting classification of bank term deposits [Notebook].
+ 
  Kaggle. (2025b). Stack vs blend [Notebook].
- Moro, S., Cortez, P., & Rita, P. (2014). An applied study of the prediction of the success of the bank telemarketing by using data-driven approach. *Decision Support Systems, 62*, 22–31.
+
+Moro, S., Cortez, P., & Rita, P. (2014). An applied study of the prediction of the success of the bank telemarketing by using data-driven approach. *Decision Support Systems, 62*, 22–31.
 
