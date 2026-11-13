@@ -1,7 +1,7 @@
-BINARY CLASSIFICATION WITH A BANK DATASET (PLAYGROUND S5E8)
+**BINARY CLASSIFICATION WITH A BANK DATASET (PLAYGROUND S5E8)**
 Competition link: https://www.kaggle.com/competitions/playground-series-s5e8. 
 
-Target: `y`
+**Target:** `y`
 (1 = client subscribes to a term deposit)
 (0 = client does not subscribe to a term deposit).
 Evaluation Metric: ROC-AUC (Receiver Operating Characteristic - Area Under the Curve).
