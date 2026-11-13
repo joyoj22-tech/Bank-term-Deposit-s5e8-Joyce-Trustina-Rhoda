@@ -53,11 +53,17 @@ We used ‘pd.get_dummies ()’ for encoding and trained 200 trees per fold. OOF
 
 Our best performing model.
 Results: 
+  
   Fold 1: 0.96881
+ 
   Fold 2: 0.96785
+ 
   Fold 3: 0.96783
+ 
   Fold 4: 0.96891
+ 
   Fold 5: 0.96816
+ 
   Overall OOF ROC-AUC: 0.96831.
 
 **Hyperparameter Tuning**
@@ -67,7 +73,9 @@ We adopted the method 'Randomizedsearchcv' for optimizing our lightGBM model. Th
 After training our three models, we selected the LightGBM model for our final Kaggle submission because it achieved the highest validation score (0.96831). We generated our final submission file using this model. 
 
 Local OOFC ROC-AUC: 0.96831
+
 Kaggle Public Leaderboard: 0.966918
+
 Kaggle Private Leaderboard: 0.96905
 
 
