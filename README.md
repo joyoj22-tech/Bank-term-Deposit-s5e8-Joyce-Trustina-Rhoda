@@ -6,7 +6,7 @@ Target: `y`
 (0 = client does not subscribe to a term deposit).
 Evaluation Metric: ROC-AUC (Receiver Operating Characteristic - Area Under the Curve).
 
-Problem and Data
+*Problem and Data*
 
 The aim is to predict whether or not a client will sign up for a bank term deposit, given marketing campaign data. 
 Dataset size
@@ -57,13 +57,17 @@ Hyperparameter Tuning
 
 We adopted the method 'Randomizedsearchcv' for optimizing our lightGBM model. The best parameters found were ` {'num_leaves': 127, 'n_estimators': 300, 'learning_rate': 0.1} `, which gave a Cross-Validation score of 0.96784. We finally decided to use the same LightGBM model we had originally since it had slightly better validation score.
 
+Hyperparameter Tuning
+
+We adopted the method 'Randomizedsearchcv' for optimizing our lightGBM model. The best parameters found were ` {'num_leaves': 127, 'n_estimators': 300, 'learning_rate': 0.1} `, which gave a Cross-Validation score of 0.96784. We finally decided to use the same LightGBM model we had originally since it had slightly better validation score.
+
 After training our three models, we selected the LightGBM model for our final Kaggle submission because it achieved the highest validation score (0.96831). We generated our final submission file using this model. 
+
 Local OOFC ROC-AUC: 0.96831
 Kaggle Public Leaderboard: 0.966918
 Kaggle Private Leaderboard: 0.96905
 
-Hyperparameter Tuning
-We adopted the method 'Randomizedsearchcv' for optimizing our lightGBM model. The best parameters found were ` {'num_leaves': 127, 'n_estimators': 300, 'learning_rate': 0.1} `, which gave a Cross-Validation score of 0.96784. We finally decided to use the same LightGBM model we had originally since it had slightly better validation score.
+
 
 Team Members and Roles
 
