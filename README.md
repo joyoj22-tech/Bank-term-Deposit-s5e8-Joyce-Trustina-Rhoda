@@ -39,13 +39,18 @@ Converted text columns to pandas' category dtype and passed them through the mod
 **The validation scheme and models.**
 
 To prevent overfitting and to ensure generalization of our model, we used the technique called “5-Fold Stratified Cross-Validation (Course lecturer,2025).”
-*The baseline model* correctly predicts "0" (the majority class) with a baseline ROC-AUC of 0.50000.
+
+*The baseline model* 
+correctly predicts "0" (the majority class) with a baseline ROC-AUC of 0.50000.
+
 *Logistic Regression (Linear Model)*
 We applied StandardScaler to normalize the features and filled missing values with the median to prevent Convergence Warnings. OOF ROC-AUC:0.94408.
+
 *Random Forest (Bagging Model)*
 We used ‘pd.get_dummies ()’ for encoding and trained 200 trees per fold. OOF ROC-AUC:0.95692.
 
 *LightGBM (Gradient Boosting Model)*
+
 Our best performing model.
 Results: 
   Fold 1: 0.96881
