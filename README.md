@@ -1,4 +1,4 @@
-BINARY CLASSIFICATION WITH A BANK DATASET (PLAYGROUND S5E8)
+## BINARY CLASSIFICATION WITH A BANK DATASET (PLAYGROUND S5E8)
 Competition link: https://www.kaggle.com/competitions/playground-series-s5e8. 
 
 Target: `y`
